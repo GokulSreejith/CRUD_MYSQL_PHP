@@ -1,5 +1,6 @@
 <?php
-require("./configuration/connection.php");
+// require_once $_SERVER['DOCUMENT_ROOT'] . "/configuration/connection.php";
+echo "Hello ";
 ?>
 
 <!DOCTYPE html>
