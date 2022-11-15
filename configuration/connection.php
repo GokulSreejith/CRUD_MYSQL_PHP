@@ -1,14 +1,15 @@
 <?php
 
-$hostname = "ap-south.connect.psdb.cloud";
-$username = "qyllrz09u1xy11w6jf6h";
-$password = "pscale_pw_EbOY4bPrqVTSeQiIkpWER6nzRiO5hD1rdG1FDkksUDz";
-$database = "gs_crud_php";
+$hostname = $_ENV["DB_HOST"];
+$username = $_ENV["DB_USERNAME"];
+$password = $_ENV["DB_PASSWORD"];
+$database = $_ENV["DB_NAME"];
+$ca_certificate = $_ENV["SSL_CERT_PATH"];
 
 $mysqli;
 try {
     $mysqli = mysqli_init();
-    $mysqli->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
+    $mysqli->ssl_set(NULL, NULL, $ca_certificate, NULL, NULL);
     $mysqli->real_connect($hostname, $username, $password, $database);
 
     if ($mysqli->connect_error) {

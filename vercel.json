@@ -7,9 +7,5 @@
   },
   "routes": [
     { "src": "/(.*)",  "dest": "/api/index.php" }
-  ],
-  "env": {
-    "APP_NAME": "CRUD-MYSQL-PHP",
-    "APP_ENV": "production"
-  }
+  ]
 }
