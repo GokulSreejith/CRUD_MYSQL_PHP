@@ -1,0 +1,17 @@
+{
+    "name": "gokulsreejith/crud",
+    "autoload": {
+        "psr-4": {
+            "Gokulsreejith\\Crud\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "GokulSreejith",
+            "email": "gokulsreejith22002@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
