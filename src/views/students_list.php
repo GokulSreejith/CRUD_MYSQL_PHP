@@ -6,11 +6,16 @@
 
 <!-- Container -->
 <div class="container-fluid p-5">
+
+    <div class="add-student mb-4">
+        <a class="btn btn-primary btn-sm btn-rounded" href="src/views/student_form.php">Add Student</a>
+    </div>
+
     <div class="card mx-3 mt-n5 shadow-lg" style="border-radius: 10px; border-left:8px #007bff solid; border-right: none; border-top:none; border-bottom:none">
         <div class="card-body">
             <nav class="navbar navbar-light">
                 <div class="container-fluid">
-                    <h4 class="card-title mb-3 text-primary text-uppercase">Add Student</h4>
+                    <h4 class="card-title mb-3 text-primary text-uppercase">Students</h4>
                     <form class="d-flex mb-3">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>

@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__."/../config/connection.php";
+
 /**
  * Get all non-deleted students
  */
